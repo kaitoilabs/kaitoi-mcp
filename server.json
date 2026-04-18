@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.kaitoi/studio",
+  "description": "Build, run, and scale visual creative-production workflows from your AI agent — hosted by Kaitoi Labs.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/kaitoilabs/kaitoi-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://kaitoi.io/studio",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.studio.kaitoi.io"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "kaitoi-studio",
+  "display_name": "Kaitoi Studio",
+  "description": "Build, run, and scale visual creative-production workflows from your AI agent — on the same canvas you work in visually.",
+  "long_description": "Kaitoi Studio is a hybrid intelligence platform for creative work: a visual canvas where you design workflows that adapt to your vision, then scale them into real production pipelines. This MCP server exposes Kaitoi Studio's workflow engine to your AI agent with 32 tools spanning graph authoring, node execution, custom-node scaffolding, library management, Fal.ai documentation lookup, web research, and project persistence. One interface connects every model — OpenAI, Anthropic, Gemini, Replicate, Runway, Fal, ElevenLabs, Stability, Ollama, ComfyUI, Luma, Flux, OpenRouter, and your own endpoints. Currently in Private Beta.",
+  "homepage": "https://kaitoi.io/studio",
+  "company": "Kaitoi Labs, Inc.",
+  "company_homepage": "https://kaitoi.io/labs",
+  "discord": "https://discord.gg/3A5YfXnCH",
+  "waitlist": "https://kaitoi.io/studio",
+  "repository": "https://github.com/kaitoilabs/kaitoi-mcp",
+  "categories": [
+    "creative",
+    "media",
+    "video",
+    "ai",
+    "workflow",
+    "production",
+    "image-generation",
+    "agents"
+  ],
+  "tags": [
+    "video-production",
+    "vfx",
+    "filmmaking",
+    "nodes",
+    "workflow",
+    "canvas",
+    "fal",
+    "replicate",
+    "runway",
+    "comfyui",
+    "hybrid-intelligence",
+    "creative-tools"
+  ],
+  "capabilities": {
+    "tools": 32,
+    "resources": 10,
+    "prompts": 3
+  },
+  "tool_groups": {
+    "run_workflows": ["run_node", "run_graph", "validate_graph"],
+    "graph_authoring": ["add_node", "connect_nodes", "disconnect_nodes", "update_node", "delete_node", "clear_graph"],
+    "discovery": ["search_nodes", "list_packages", "get_package", "list_package_files", "read_package_file"],
+    "state_inspection": ["get_graph_state", "get_node_info", "get_node_output", "get_app_health"],
+    "projects": ["list_projects", "load_project", "save_project"],
+    "files_and_assets": ["browse_library", "upload_file", "read_file", "write_file", "update_file"],
+    "custom_nodes": ["get_node_code", "validate_node_script", "search_user_scripts"],
+    "research": ["get_fal_docs", "web_search", "crawl_url"]
+  },
+  "transport": "streamable-http",
+  "endpoint": "https://mcp.studio.kaitoi.io",
+  "auth": {
+    "type": "bearer",
+    "description": "Per-user bearer token minted in Kaitoi Studio under Settings → MCP. Revocable, with a 365-day default lifetime."
+  },
+  "license": "MIT",
+  "status": "beta",
+  "hosted_by": "Kaitoi Labs, Inc."
+}

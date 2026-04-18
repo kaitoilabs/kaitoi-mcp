@@ -1,0 +1,7 @@
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Agent handoff — internal, never publish
+HANDOFF.md

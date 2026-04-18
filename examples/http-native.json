@@ -1,0 +1,11 @@
+{
+  "_comment": "Drop-in config for MCP clients with native remote-HTTP support (Cursor, VS Code, Windsurf, Zed, etc.). Replace YOUR_TOKEN with a token minted in Kaitoi Studio → Settings → MCP.",
+  "mcpServers": {
+    "kaitoi-studio": {
+      "url": "https://mcp.studio.kaitoi.io",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN"
+      }
+    }
+  }
+}

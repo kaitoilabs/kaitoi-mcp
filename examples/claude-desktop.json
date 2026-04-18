@@ -1,0 +1,15 @@
+{
+  "_comment": "Claude Desktop config via the mcp-remote bridge (works on versions without native remote-HTTP support). Location: macOS ~/Library/Application Support/Claude/claude_desktop_config.json — Windows %APPDATA%\\Claude\\claude_desktop_config.json. Replace YOUR_TOKEN with a token minted in Kaitoi Studio → Settings → MCP.",
+  "mcpServers": {
+    "kaitoi-studio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.studio.kaitoi.io",
+        "--header",
+        "Authorization: Bearer YOUR_TOKEN"
+      ]
+    }
+  }
+}
